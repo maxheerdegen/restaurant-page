@@ -92,9 +92,35 @@ button:hover {
 }
 
 #content {
-    align-items: center;
     background-color: var(--sky-medium);
     width: 80vw;
     flex: 1;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contentText {
+    padding: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.openingHours {
+    font-style: italic;
+}
+
+.openingHours:last-child {
+    margin-bottom: 10px;
 }
