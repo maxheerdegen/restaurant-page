@@ -2,5 +2,16 @@ import "./styles.css";
 import { populateHome } from "./home.js"; 
 import { populateAbout } from "./about.js";
 
-console.log("Works as intended");
-populateAbout();
+const contentDiv = document.querySelector("#content");
+const homeButton = document.querySelector(".home");
+const aboutButton = document.querySelector(".about");
+
+homeButton.addEventListener("click", () => {
+    contentDiv.textContent = "";
+    populateHome();
+})
+
+aboutButton.addEventListener("click", () => {
+    contentDiv.textContent = "";
+    populateAbout();
+})
