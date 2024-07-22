@@ -15,3 +15,5 @@ aboutButton.addEventListener("click", () => {
     contentDiv.textContent = "";
     populateAbout();
 })
+
+populateHome();
